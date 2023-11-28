@@ -1,0 +1,225 @@
+@font-face {
+    font-family: Ubuntu;
+    src: url('../fonts/Ubuntu-Regular.ttf');
+}
+@font-face {
+    font-family: Ubuntu;
+    src: url('../fonts/Ubuntu-Light.ttf');
+    font-weight: 300;
+}
+@font-face {
+    font-family: Ubuntu;
+    src: url('../fonts/Ubuntu-Medium.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: Ubuntu;
+    src: url('../fonts/Ubuntu-Bold.ttf');
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;     
+    box-sizing: border-box;
+    font-family: Ubuntu;
+}
+
+/* Navbar */
+nav {
+    height: 70px;
+    background-color: #035f37;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    top: 0;
+    position: fixed;
+}
+
+nav .container {
+    width: 1400px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    margin-right: 30px;
+}
+.nav-link a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 5px 0;
+}
+
+.nav-link a:hover {
+    font-weight: bold;
+    border-bottom: 3px solid #FFF;
+}
+
+.nav-link .active {
+    border-bottom: 3px solid #FFF;
+}
+
+.search {
+    margin-left: auto;
+}
+
+.search .input-search {
+    padding: 10px 15px;
+    border-radius: 14px;
+}
+
+.search .input-search::placeholder {
+    font-size: 18px;
+    color: #0f0f0f;
+}
+/* Navbar */
+
+main {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+/* HTML1 */
+.CSS {
+    padding-top: 110px;
+    padding-bottom: 20px;
+    min-height: 600px;
+}
+
+.CSS .title h1 {
+    color: #277151;
+    font-weight: bold;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+.CSS .title h3 {
+    color: #1d1d1d;
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.CSS .title p {
+    color: #1d1d1d;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 10px 0;
+}
+
+.CSS .title b{
+    font-size: 22px;
+}
+
+.CSS .title li{
+    color: #1d1d1d;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 2px 0;
+}
+
+.CSS .gambar{
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.CSS .hastag p{
+    border: 2px solid black;
+    border-radius: 15px;
+    display: inline-block;
+    background-color: grey;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+
+/* HTML1 */
+
+/* Footer */
+
+.section {
+    padding: 80px 13% 70px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap : 3.5rem;
+    background: #109E61;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding-left: 75px;
+    padding-top: 15px;
+    height: 240px;
+}
+
+.footer-content h4{
+    color: black;
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+}
+
+.footer-content li{
+    margin-bottom: 16px;
+    list-style-type: none;
+}
+
+.footer-content li a{
+    display: block;
+    color: #1e293b;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all .40s ease;
+} 
+
+.footer-content li a:hover{
+    transform: translatY(-3px) translateX(-5px);
+    color: white 
+} 
+
+.footer-content p{
+    color: #d6d6d6;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 20px 0;
+}
+
+.icons a{
+    display: inline-block;
+    font-size: 22px;
+    color: #d6d6d6;
+    margin-right: 17px;
+    transition: all .40s ease;
+    margin: 20px 0;
+    gap : 3.5rem;
+}
+
+.icons a:hover{
+    color: #fff;
+    transform: translateY(-5px);
+}
+#footerL{
+    width: 75;
+    height: 75;
+}
+
+.fixed-footer {
+    width: 100%;
+    position: relative;
+    background: #333;
+    margin: 0 10px 10px 0;
+    left: 0;
+    right: 0;
+    padding: 15px 0;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+  }
+
+.fixed-footer {
+    bottom: -234px;
+}
+/* Footer */

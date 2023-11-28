@@ -1,0 +1,359 @@
+@font-face {
+    font-family: Ubuntu;
+    src: url('../fonts/Ubuntu-Regular.ttf');
+}
+@font-face {
+    font-family: Ubuntu;
+    src: url('../fonts/Ubuntu-Light.ttf');
+    font-weight: 300;
+}
+@font-face {
+    font-family: Ubuntu;
+    src: url('../fonts/Ubuntu-Medium.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: Ubuntu;
+    src: url('../fonts/Ubuntu-Bold.ttf');
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;     
+    box-sizing: border-box;
+    font-family: Ubuntu;
+}
+
+/* Navbar */
+nav {
+    height: 70px;
+    background-color: #277151;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    top: 0;
+    position: fixed;
+}
+
+nav .container {
+    width: 1400px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    margin-right: 30px;
+}
+.nav-link a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 5px 0;
+}
+
+.nav-link a:hover {
+    font-weight: bold;
+    border-bottom: 3px solid #FFF;
+}
+
+.nav-link .active {
+    border-bottom: 3px solid #FFF;
+}
+
+.search {
+    margin-left: auto;
+}
+
+.search .input-search {
+    padding: 10px 15px;
+    border-radius: 14px;
+}
+
+.search .input-search::placeholder {
+    font-size: 18px;
+    color: #161616;
+}
+/* Navbar */
+
+
+
+/* Header */
+header {
+    padding-top: 70px;
+    background-color:#D9F1E7;
+    display: flex;
+    justify-content: center;
+}
+
+header .container {
+    width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 66px;
+    color: #3C6151;
+    font-weight: bold;
+}
+
+header .btn-mulaibelajar {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 50px;
+    border-radius: 14px;
+    background-color: #109E61;
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+}
+
+header .btn-mulaibelajar:hover {
+    background-color: #0e804e; 
+}
+/* Header */
+
+main {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+/* Category */
+.category {
+    padding: 60px 0;
+    min-height: 600px;
+}
+
+.category .title h1 {
+    color: #277151;
+    font-weight: bold;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+.category .title h3 {
+    color: #1d1d1d;
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.category .title p {
+    color: #1d1d1d;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.category .content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.category .content .card {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: auto;
+    padding: 30px;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.25);
+}
+
+.category .card .card-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.category .card .card-title p {
+    color: #1d1d1d;
+    font-size: 36px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.category .card .card-body p {
+    color: #1d1d1d;
+    font-size: 18px;
+}
+/* Category */
+
+
+
+/* Terbaru */
+.terbaru {
+    padding: 60px 0;
+    min-height: 600px;
+}
+
+.terbaru .title h1 {
+    color: #277151;
+    font-weight: bold;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+.terbaru .title h3 {
+    color: #1d1d1d;
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.terbaru .content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.terbaru .content .card {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: auto;
+    padding: 30px;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.25);
+}
+/* Terbaru */
+
+
+
+/* Review */
+.review {
+    padding: 60px 0;
+    min-height: 600px;
+}
+
+.review .title h1 {
+    color: #277151;
+    font-weight: bold;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+.review .title h3 {
+    color: #1d1d1d;
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.review .content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.review .content .card {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: auto;
+    padding: 30px;
+    background-color: #FFF;
+    border-radius: 25px;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.25);
+}
+
+.review .content .card .isi {
+    margin-bottom: 20px;
+}
+.review .content .card .info {
+    display: flex;
+    justify-content: space-between;
+}
+/* Review */
+
+
+/* Footer */
+
+.section {
+    padding: 80px 13% 70px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap : 3.5rem;
+    background: #109E61;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding-left: 75px;
+    padding-top: 15px;
+    height: 240px;
+}
+
+.footer-content h4{
+    color: black;
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+}
+
+.footer-content li{
+    margin-bottom: 16px;
+    list-style-type: none;
+}
+
+.footer-content li a{
+    display: block;
+    color: #1e293b;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all .40s ease;
+} 
+
+.footer-content li a:hover{
+    transform: translatY(-3px) translateX(-5px);
+    color: white 
+} 
+
+.footer-content p{
+    color: #d6d6d6;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 20px 0;
+}
+
+.icons a{
+    display: inline-block;
+    font-size: 22px;
+    color: #d6d6d6;
+    margin-right: 17px;
+    transition: all .40s ease;
+    margin: 20px 0;
+    gap : 3.5rem;
+}
+
+.icons a:hover{
+    color: #fff;
+    transform: translateY(-5px);
+}
+#footerL{
+    width: 75;
+    height: 75;
+}
+
+.fixed-footer {
+    width: 100%;
+    position: relative;
+    background: #333;
+    margin: 0 10px 10px 0;
+    padding: 15px 0;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+  }
+
+.fixed-footer {
+    bottom: -234px;
+}
+/* Footer */
