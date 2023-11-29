@@ -1,2 +1,0 @@
-onCommand:vscode-pets.spawn-pet
-

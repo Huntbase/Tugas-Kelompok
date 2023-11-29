@@ -79,8 +79,6 @@ nav .container {
 }
 /* Navbar */
 
-
-
 /* Header */
 header {
     padding-top: 70px;
@@ -105,6 +103,7 @@ header h1 {
 header .btn-mulaibelajar {
     display: inline-block;
     margin-top: 20px;
+    margin-left: 125px;
     text-decoration: none;
     font-size: 20px;
     padding: 15px 50px;
@@ -121,7 +120,6 @@ header .btn-mulaibelajar:hover {
 /* Header */
 
 main {
-    width: 1400px;
     margin: 0 auto;
 }
 
@@ -136,22 +134,25 @@ main {
     font-weight: bold;
     font-size: 38px;
     margin-bottom: 10px;
+    padding-left: 10px;
 }
 .category .title h3 {
     color: #1d1d1d;
     font-weight: bold;
     font-size: 28px;
     margin-bottom: 10px;
+    padding-left: 10px;
 }
 .category .title p {
     color: #1d1d1d;
     font-size: 22px;
     margin-bottom: 10px;
+    padding-left: 10px;
 }
 
 .category .content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 50px;
 }
 
@@ -186,8 +187,6 @@ main {
 }
 /* Category */
 
-
-
 /* Terbaru */
 .terbaru {
     padding: 60px 0;
@@ -199,13 +198,17 @@ main {
     font-weight: bold;
     font-size: 38px;
     margin-bottom: 10px;
+    padding-left: 10px;
 }
+
 .terbaru .title h3 {
     color: #1d1d1d;
     font-weight: bold;
     font-size: 28px;
     margin-bottom: 10px;
+    padding-left: 10px;
 }
+
 .terbaru .content {
     display: flex;
     justify-content: space-around;
@@ -237,13 +240,16 @@ main {
     font-weight: bold;
     font-size: 38px;
     margin-bottom: 10px;
+    padding-left: 10px;
 }
 .review .title h3 {
     color: #1d1d1d;
     font-weight: bold;
     font-size: 28px;
     margin-bottom: 10px;
+    padding-left: 10px;
 }
+
 .review .content {
     display: flex;
     flex-wrap: wrap;
@@ -251,6 +257,7 @@ main {
     justify-content: space-around;
     margin-top: 50px;
 }
+
 .review .content .card {
     margin-bottom: 30px;
     display: flex;
@@ -280,6 +287,12 @@ main {
     padding: 80px 13% 70px;
 }
 
+.contentFT{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 .footer{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
@@ -288,7 +301,6 @@ main {
     position: absolute;
     left: 0;
     right: 0;
-    padding-left: 75px;
     padding-top: 15px;
     height: 240px;
 }
@@ -347,13 +359,11 @@ main {
     width: 100%;
     position: relative;
     background: #333;
-    margin: 0 10px 10px 0;
+    left: 0;
+    right: 0;
     padding: 15px 0;
     color: rgba(255, 255, 255, 1);
     text-align: center;
   }
 
-.fixed-footer {
-    bottom: -234px;
-}
 /* Footer */
