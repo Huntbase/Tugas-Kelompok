@@ -2,16 +2,19 @@
     font-family: Ubuntu;
     src: url('../fonts/Ubuntu-Regular.ttf');
 }
+
 @font-face {
     font-family: Ubuntu;
     src: url('../fonts/Ubuntu-Light.ttf');
     font-weight: 300;
 }
+
 @font-face {
     font-family: Ubuntu;
     src: url('../fonts/Ubuntu-Medium.ttf');
     font-weight: 500;
 }
+
 @font-face {
     font-family: Ubuntu;
     src: url('../fonts/Ubuntu-Bold.ttf');
@@ -20,7 +23,7 @@
 
 * {
     margin: 0;
-    padding: 0;     
+    padding: 0;
     box-sizing: border-box;
     font-family: Ubuntu;
 }
@@ -46,7 +49,8 @@ nav .container {
 .navbar-brand {
     margin-right: 30px;
 }
-.nav-link a{
+
+.nav-link a {
     text-decoration: none;
     color: #FFF;
     font-size: 18px;
@@ -64,25 +68,58 @@ nav .container {
     border-bottom: 3px solid #FFF;
 }
 
-.search {
+.search-box {
     margin-left: auto;
+    background: #277151;
+    border-radius: 5px;
+    padding: 15px;
 }
 
-.search .input-search {
-    padding: 10px 15px;
-    border-radius: 14px;
+.search-btn {
+    color: #ffffff;
+    float: right;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #189ab4;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
-.search .input-search::placeholder {
-    font-size: 18px;
-    color: #161616;
+.search-input {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 14px;
+    width: 0px;
+    line-height: 40px;
+    transition: 0.5s;
 }
+
+.search-box:hover>.search-input {
+    width: 240px;
+    padding: 0 10px;
+    margin-right: 5px !important;
+    background: white;
+    border-radius: 5px;
+    color: black;
+}
+
+.search-box:hover>.search-btn {
+    background: #E9dac4;
+    color: #189ab4;
+}
+
 /* Navbar */
 
 /* Header */
 header {
     padding-top: 70px;
-    background-color:#D9F1E7;
+    background-color: #D9F1E7;
     display: flex;
     justify-content: center;
 }
@@ -115,8 +152,9 @@ header .btn-mulaibelajar {
 }
 
 header .btn-mulaibelajar:hover {
-    background-color: #0e804e; 
+    background-color: #0e804e;
 }
+
 /* Header */
 
 main {
@@ -136,6 +174,7 @@ main {
     margin-bottom: 10px;
     padding-left: 10px;
 }
+
 .category .title h3 {
     color: #1d1d1d;
     font-weight: bold;
@@ -143,6 +182,7 @@ main {
     margin-bottom: 10px;
     padding-left: 10px;
 }
+
 .category .title p {
     color: #1d1d1d;
     font-size: 22px;
@@ -164,7 +204,7 @@ main {
     padding: 30px;
     background-color: #FFF;
     border-radius: 5px;
-    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.25);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .category .card .card-title {
@@ -185,6 +225,7 @@ main {
     color: #1d1d1d;
     font-size: 18px;
 }
+
 /* Category */
 
 /* Terbaru */
@@ -223,8 +264,9 @@ main {
     padding: 30px;
     background-color: #FFF;
     border-radius: 5px;
-    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.25);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
+
 /* Terbaru */
 
 
@@ -242,6 +284,7 @@ main {
     margin-bottom: 10px;
     padding-left: 10px;
 }
+
 .review .title h3 {
     color: #1d1d1d;
     font-weight: bold;
@@ -268,16 +311,18 @@ main {
     background-color: #FFF;
     border-radius: 25px;
     border: 1px solid #f1f1f1;
-    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.25);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .review .content .card .isi {
     margin-bottom: 20px;
 }
+
 .review .content .card .info {
     display: flex;
     justify-content: space-between;
 }
+
 /* Review */
 
 
@@ -287,16 +332,17 @@ main {
     padding: 80px 13% 70px;
 }
 
-.contentFT{
+.contentFT {
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.footer{
+
+.footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-    gap : 3.5rem;
+    gap: 3.5rem;
     background: #109E61;
     position: absolute;
     left: 0;
@@ -305,52 +351,53 @@ main {
     height: 240px;
 }
 
-.footer-content h4{
+.footer-content h4 {
     color: black;
     margin-bottom: 1.5rem;
     font-size: 20px;
 }
 
-.footer-content li{
+.footer-content li {
     margin-bottom: 16px;
     list-style-type: none;
 }
 
-.footer-content li a{
+.footer-content li a {
     display: block;
     color: #1e293b;
     font-size: 15px;
     font-weight: 400;
     transition: all .40s ease;
-} 
+}
 
-.footer-content li a:hover{
+.footer-content li a:hover {
     transform: translatY(-3px) translateX(-5px);
-    color: white 
-} 
+    color: white
+}
 
-.footer-content p{
+.footer-content p {
     color: #d6d6d6;
     font-size: 16px;
     line-height: 30px;
     margin: 20px 0;
 }
 
-.icons a{
+.icons a {
     display: inline-block;
     font-size: 22px;
     color: #d6d6d6;
     margin-right: 17px;
     transition: all .40s ease;
     margin: 20px 0;
-    gap : 3.5rem;
+    gap: 3.5rem;
 }
 
-.icons a:hover{
+.icons a:hover {
     color: #fff;
     transform: translateY(-5px);
 }
-#footerL{
+
+#footerL {
     width: 75;
     height: 75;
 }
@@ -364,6 +411,6 @@ main {
     padding: 15px 0;
     color: rgba(255, 255, 255, 1);
     text-align: center;
-  }
+}
 
 /* Footer */
